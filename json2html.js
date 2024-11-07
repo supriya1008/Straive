@@ -4,11 +4,11 @@ export default function json2html(data) {
     table += '<tbody>';
 
     data.forEach(row => {
-        table += <tr>;
-        table += <td>${row.Name}</td>;
-        table += <td>${row.Age}</td>;
-        table += <td>${row.Gender ? row.Gender : ''}</td>;
-        table += </tr>;
+        table += '<tr>';
+        table += `<td>${row.Name}</td>`;
+        table += `<td>${row.Age}</td>`;
+        table += `<td>${row.Gender ? row.Gender : ''}</td>`;
+        table += '</tr>';
     });
 
     table += '</tbody></table>';
